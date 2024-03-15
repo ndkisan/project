@@ -1,0 +1,198 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    overflow: auto; /* Enable scrolling for the entire page */
+}
+
+/* Main container styles */
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url('wood.gif');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh; /* Ensure that .main takes up at least the full height of the viewport */
+    padding: 20px;
+    overflow: auto; /* Enable scrolling for .main */
+}
+
+.user-face {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circle shape */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Logo styles */
+.logo {
+    color: #7C4700;
+    font-size: 30px;
+    font-family: 'Comic Sans MS';
+}
+
+/* Content styles */
+.content {
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Product styles */
+.product {
+    display: flex; /* Use flexbox to arrange elements in a row */
+    flex-wrap: wrap; /* Allow elements to wrap to the next line if needed */
+}
+
+/* Product image styles */
+.product-image,
+.product-description {
+    width: 50%; /* Each element takes up half of the container width */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    padding: 30px; /* Add padding for spacing */
+}
+
+.product-image img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.product-image img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Product description styles */
+.product-description {
+    float: right; /* Float the description container to the right */
+}
+
+/* Button styles */
+button {
+    font-size: large;
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    color: #DDB306;
+}
+
+/* List styles */
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    margin: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #DDB306;
+}
+.add-to-cart-button {
+    background-color: #8B4513;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Add margin between buttons */
+    display: block; /* Change display to block */
+}
+
+.add-to-cart-button:last-child {
+    margin-bottom: 0; /* Remove margin from last button */
+    text-decoration: none;
+}
+
+.add-to-cart-button:hover {
+    background-color: #8B4513; /* Darker brown on hover */
+}
+.button-container a {
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.product-description {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Adjust margin as needed */
+}
+.buy-now-button {
+    background-color: #8B4513; /* Brown color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: #A0522D; /* Darker brown on hover */
+}
+form {
+    display: inline-block; /* Display the form as inline block */
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Adjust the margin to create the desired gap */
+    margin-bottom: 10px;
+}
+
+/* Add to Cart button styles */
+.add-to-cart-button {
+    margin-right: 10px; /* Add margin to separate from the quantity input field */
+}

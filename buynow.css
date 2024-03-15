@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url('wood.gif');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh; /* Adjust as needed */
+    padding: 20px; /* Added padding for better spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    overflow: auto; /* Add overflow property to allow the container to expand */
+}
+.user-face {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circle shape */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.icon {
+    width: 200px;
+    height: 70px;
+}
+
+.logo {
+    color: #7C4700;
+    font-size: 30px;
+    font-family: 'Comic Sans MS';
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: large;
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    color: #DDB306;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    margin: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #DDB306;
+}
+/* Add this CSS to your buynow.css file */
+
+.btnn {
+    width: 50%;
+    height: 50px;
+    background: #7C4700;
+    border: none;
+    margin-top: 25px; /* Add margin to create space between this button and the next element */
+    margin-bottom: 10px; /* Adjust margin bottom */
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.textbox select {
+    width: 100%;
+    height: 40px;
+    font-size: 1em; /* Adjust as needed */
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    padding: 5px; /* Add padding to ensure the text is properly aligned */
+    margin-top: 10px; /* Add margin top to create space between this dropdown and the above button */
+}
+
+.textbox select:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 7%;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.form {
+    width: 320px;
+    height: 400px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50%;
+}
+
+.form h2 {
+    width: 200px;
+    text-align: center;
+    font-family: 'Algerian';
+    color: #e11f27;
+    font-size: 5px;
+    background-color: #362612;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.form input {
+    width: 80%;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+/* Add this to your style.css file */
+.eye-icon {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff; /* Adjust the color as needed */
+}
+
+.eye-icon:hover {
+    color: #333; /* Adjust the hover color as needed */
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: 'Comic Sans MS';
+}
+
+.btnn {
+    width: 50%;
+    height: 50px;
+    background: #7C4700;
+    border: none;
+    margin-top: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #3A1F04;
+    color: #CE8B15;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    font-family: 'Algerian';
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #DDB306;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.textbox input {
+    width: 120%;
+    height: 40px;
+    font-size: 4px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+
+.textbox input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Add this to your login.css file */
+/* Additional styles for the login page */
+body {
+    font-size: 16px;
+}
+
+.main {
+    height: 100vh; /* Use viewport height for full screen height */
+}
+
+.navbar {
+    height: 80px; /* Adjust as needed */
+}
+
+.menu {
+    width: 70%; /* Adjust as needed */
+}
+
+.content {
+    padding: 20px; /* Add padding for better readability */
+}
+
+.form {
+    width: 80%; /* Adjust as needed */
+    max-width: 400px; /* Set a max-width for larger screens */
+    height: auto;
+    margin-top:20%;
+}
+
+.form h2 {
+    font-size: 2em; /* Adjust as needed */
+}
+
+.form input {
+    width: 100%;
+    height: 40px;
+    font-size: 1em; /* Adjust as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
+
+.username {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+}

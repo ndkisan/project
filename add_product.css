@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url('wood.gif');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh; /* Adjust as needed */
+    padding: 20px; /* Added padding for better spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    overflow: auto; /* Add overflow property to allow the container to expand */
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.user-face {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circle shape */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.icon {
+    width: 200px;
+    height: 70px;
+}
+
+.logo {
+    color: #7C4700;
+    font-size: 30px;
+    font-family: 'Comic Sans MS';
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: large;
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    color: #DDB306;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    margin: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #DDB306;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ ; /* Replace 'your_background.gif' with the path to your GIF */
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+.user-face {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circle shape */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Message styles */
+.success,
+.error {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #dff0d8;
+    border: 1px solid #d0e9c6;
+    color: #3c763d;
+}
+
+.error {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+}
